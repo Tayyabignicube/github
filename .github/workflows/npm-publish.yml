@@ -3,6 +3,10 @@ on: push
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+      # Mobile folder working directory.
+        working-directory: Mobile
     steps:
       - name: Checkout
         uses: actions/checkout@v4
