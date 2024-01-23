@@ -16,6 +16,6 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
         # we have already installed all dependencies above
-         install: true
+         install: false
         # Cypress tests and config file are in "e2e" folder
          working-directory: mob
